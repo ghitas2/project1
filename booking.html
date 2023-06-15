@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="booking.html">booking</a></li>
+            <li><a href="services.html">service</a></li>
+            <li><a href="experts.html">Our experts</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+    </div>
+    <div class="container">
+        <div class="fields">
+            <form action="/submit-form" method="post">
+                <div class="label">
+                    <label for="firstname">First name:</label>
+                </div>
+                <div>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="label">
+                    <label for="lastname">Last name:</label>
+                </div>
+                <div>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="label">
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="label">
+                    <label for="service"> Select service</label>
+                </div>
+                <div>
+                    <select id="service" name="service">
+                        <option value="-">-</option>
+                        <option value="Y">Yoga</option>
+                        <option value="W">Weight-Lifting</option>
+                        <option value="C">Crossfit</option>
+                        <option value="S">Swimming</option>
+                        <option value="P">Pilate</option>
+                    </select>
+                </div>
+                <div class="label">
+                    <label for="instructors"> Select instructor</label>
+                </div>
+                <div style="padding-bottom:20px">
+                    <select id="instructors" name="instructors">
+                        <option value="-">-</option>
+                        <option value="AS">Amber Strong</option>
+                        <option value="MP"> Max Power</option>
+                        <option value="LS">Lily Steel</option>
+                        <option value="JA">Jake Atlas</option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <input onclick="openPopup()" type="submit" value="Submit" class="submit">
+                </div>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <img src="images/th.png" width="30px" height="30px">
+                        <h2>Confirmation message</h2>
+                        <p>Your session has been booked successfully</p>
+                        <p>You will receive a confirmation email shortly</p>
+                        <button onclick="closePopup()" class="close-button">Close</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="calendar-block">
+            <div class="container-calendar">
+                <div class="calendar">
+                    <div class="header">
+                        <div class="month"></div>
+                        <div class="btns">
+                            <div class="btn today-btn">
+                                <i class="fas fa-calendar-day"></i>
+                            </div>
+                            <div class="btn prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="btn next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weekdays">
+                        <div class="day">Sun</div>
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                    </div>
+                    <div class="days">
+                        <!-- lets add days using js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time" id="time">
+            <div>
+                <div class="hour" id="1">
+                </div>
+                <div class="hour" id="2">
+                </div>
+            </div>
+            <div>
+                <div class="hour" id="3">
+                </div>
+                <div class="hour" id="4">
+                </div>
+            </div>
+            <div>
+                <div class="hour" id="5">
+                </div>
+                <div class="hour" id="6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <input id="chosen-time" style="display: none;">
+    <script src="/js/booking.js"></script>
+
+</body>
+
+</html>

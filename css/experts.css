@@ -1,0 +1,61 @@
+body {
+    background-color: black !important;
+}
+
+.experts {
+    color: white !important;
+    margin-left: 60px !important;
+    margin-top: 60px;
+    padding-left: 650px;
+
+}
+
+nav {
+    background-color: none !important;
+    padding: 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+
+}
+
+nav ul {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+}
+
+li {
+    margin-right: 150px !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+    padding: 5px 10px !important;
+}
+
+a:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+nav ul li a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+div.card {
+    margin-right: 50px;
+    width: 500px;
+}
+
+
+
+div.container {
+    display: flex;
+    margin-top: 100px;
+
+}

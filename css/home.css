@@ -1,0 +1,104 @@
+body {
+    background-image: url("/images/crossfit2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* Adjust as needed */
+}
+
+#myInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+
+.logo {
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+.header {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 400px;
+    margin-left: 650px;
+
+}
+
+.fitness {
+    padding-left: 50px !important;
+    margin-top: 0px;
+    padding-top: 0px;
+
+}
+
+.dayone {
+    margin-bottom: 0px;
+    padding-bottom: 0px
+}
+
+.nearest {
+    color: white;
+    font-family: sans-serif;
+    margin-left: 650px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0px;
+    margin-bottom: -30px;
+}
+
+.alignement {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 610px;
+}

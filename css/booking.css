@@ -1,0 +1,162 @@
+select {
+    margin-left: 10px;
+}
+
+input {
+    margin-left: 10px;
+
+}
+
+label {
+    color: white;
+    margin-left: 10px;
+    padding-top: 30px;
+}
+
+.menu {
+    background-color: black;
+    height: 50px;
+}
+
+.label {
+    padding-top: 20px;
+
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 1600px;
+    margin: 10px;
+
+}
+
+.fields {
+    background-color: black;
+    border: solid 2px;
+    border-color: white;
+    width: 25%;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    margin-top: 85px;
+    height: 470px;
+
+}
+
+.calendar-block {
+    display: inline-block;
+    margin: 10px;
+    width: 50%;
+    margin-top: 0px;
+
+
+}
+
+.time {
+    width: 25%;
+    margin: 15px;
+    display: none;
+}
+
+.hour {
+    text-align: center;
+    width: 150px;
+    height: 60px;
+    background-color: rgb(123, 213, 245);
+    color: black;
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 60px;
+    border-radius: 8px;
+    font-size: xx-large;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+nav {
+    background-color: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submit {
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    align-content: center;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 800px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.close-button {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.card {
+    width: 500px !important;
+}
